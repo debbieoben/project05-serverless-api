@@ -365,3 +365,141 @@ This project is part of a portfolio and is available for educational purposes.
 ---
 
 **⭐ If this project helped you learn serverless architecture, please star the repository!**
+
+---
+
+## 📸 Project Screenshots
+
+### 🏗️ System Architecture
+![Architecture Diagram](screenshots/01-architecture.png)
+*Complete serverless architecture showing API Gateway, Lambda, DynamoDB, SNS, and CloudWatch integration*
+
+---
+
+### 🗄️ DynamoDB Table Configuration
+![DynamoDB Table Overview](screenshots/02-dynamodb-table.png)
+*TaskManagementAPI table with composite primary key (taskId + createdAt) and GSI configuration*
+
+---
+
+### 📊 DynamoDB Table Items
+![DynamoDB Sample Data](screenshots/03-dynamodb-items.png)
+*Sample tasks stored in DynamoDB with all attributes including status, priority, and timestamps*
+
+---
+
+### ⚡ Lambda Functions Overview
+![All Lambda Functions](screenshots/04-lambda-functions-list.png)
+*All 5 Python Lambda functions handling complete CRUD operations*
+
+---
+
+### 💻 CreateTask Lambda Function
+![CreateTask Function Code](screenshots/05-create-task-function.png)
+*Python code showing task creation, DynamoDB write, and SNS notification integration*
+
+---
+
+### 🔐 Lambda Execution Role
+![IAM Execution Role](screenshots/06-lambda-execution-role.png)
+*TaskAPILambdaExecutionRole with DynamoDB and SNS permissions*
+
+---
+
+### 🌐 API Gateway Resources Tree
+![API Gateway Complete Structure](screenshots/07-api-gateway-resources.png)
+*REST API resource tree with all CRUD endpoints and OPTIONS methods for CORS*
+
+---
+
+### 🔗 POST /tasks Method Integration
+![POST Method Configuration](screenshots/08-post-tasks-method.png)
+*CreateTask Lambda integration with proxy integration enabled*
+
+---
+
+### 🚀 API Gateway Dev Stage
+![API Deployment Stage](screenshots/09-api-dev-stage.png)
+*API deployed to 'dev' stage with production-ready Invoke URL*
+
+---
+
+### ✅ API Test - Create Task Success
+![POST /tasks Test Result](screenshots/10-api-test-success.png)
+*Successful task creation showing 201 status code and complete task object response*
+
+---
+
+### 📋 DynamoDB Task Created
+![Task in DynamoDB](screenshots/11-dynamodb-task-created.png)
+*Newly created task visible in DynamoDB table with all attributes populated*
+
+---
+
+### 🔄 API Test - List Tasks Success
+![GET /tasks Test Result](screenshots/12-get-tasks-success.png)
+*Successful retrieval of all tasks with count and array of task objects*
+
+---
+
+### 📧 SNS Topic Configuration
+![SNS Topic Details](screenshots/13-sns-topic-subscription.png)
+*TaskNotifications SNS topic with confirmed email subscription for real-time alerts*
+
+---
+
+### 📨 CloudWatch Alarms List
+![CloudWatch Alarms](screenshots/14-cloudwatch-alarms.png)
+*CreateTask-Errors alarm configured to trigger on Lambda function errors*
+
+---
+
+### 📊 CloudWatch Dashboard
+![Monitoring Dashboard](screenshots/15-cloudwatch-dashboard.png)
+*Custom dashboard showing Lambda invocations, errors, and API metrics*
+
+---
+
+### 📬 Email Notification Received
+![SNS Email Alert](screenshots/16-sns-email-notification.png)
+*Automated email notification sent when new task is created, including all task details*
+
+---
+
+### 📈 CloudWatch Log Stream
+![Lambda Execution Logs](screenshots/19-cloudwatch-logs.png)
+*Detailed execution logs showing successful task creation and SNS publish confirmation*
+
+---
+
+### 🌐 API Invoke URL
+![API Gateway Invoke URL](screenshots/invoke-url.png)
+*Production endpoint URL for accessing the deployed REST API*
+
+---
+
+### 🎯 Complete API Structure
+![API Gateway Full View](screenshots/22-complete-api-structure.png)
+*Comprehensive view of all API resources, methods, and integrations*
+
+---
+
+### 💡 Additional Project Evidence
+
+#### Lambda Function Details
+![Lambda Configuration](screenshots/17-lambda-details.png)
+*Function configuration showing runtime, memory, timeout, and environment variables*
+
+#### API Gateway Method Details  
+![Method Execution](screenshots/18-api-method-details.png)
+*Detailed view of method request, integration request, and response configuration*
+
+#### DynamoDB GSI Configuration
+![Global Secondary Index](screenshots/20-dynamodb-gsi.png)
+*userId-createdAt-index for efficient user-based task queries*
+
+#### CloudWatch Metrics
+![Performance Metrics](screenshots/21-cloudwatch-metrics.png)
+*Lambda invocation metrics, duration, and error rates over time*
+
+---
