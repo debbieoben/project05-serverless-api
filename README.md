@@ -483,23 +483,3 @@ This project is part of a portfolio and is available for educational purposes.
 *Comprehensive view of all API resources, methods, and integrations*
 
 ---
-
-### 💡 Additional Project Evidence
-
-#### Lambda Function Details
-![Lambda Configuration](screenshots/17-lambda-details.png)
-*Function configuration showing runtime, memory, timeout, and environment variables*
-
-#### API Gateway Method Details  
-![Method Execution](screenshots/18-api-method-details.png)
-*Detailed view of method request, integration request, and response configuration*
-
-#### DynamoDB GSI Configuration
-![Global Secondary Index](screenshots/20-dynamodb-gsi.png)
-*userId-createdAt-index for efficient user-based task queries*
-
-#### CloudWatch Metrics
-![Performance Metrics](screenshots/21-cloudwatch-metrics.png)
-*Lambda invocation metrics, duration, and error rates over time*
-
----
